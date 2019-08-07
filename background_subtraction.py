@@ -1,6 +1,10 @@
 from __future__ import print_function
 import cv2 as cv
 
+'''
+takes in time-lapse videos and perform background subtraction
+'''
+
 vid_file = 'videos/16.avi'
 
 #create Background Subtractor objects
