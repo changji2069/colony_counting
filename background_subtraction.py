@@ -6,8 +6,6 @@ vid_file = 'videos/16.avi'
 #create Background Subtractor objects
 backSub = cv.createBackgroundSubtractorMOG2(varThreshold=15, detectShadows=False)
 
-
-
 # [capture]
 capture = cv.VideoCapture(vid_file)
 if not capture.isOpened:
@@ -17,7 +15,7 @@ if not capture.isOpened:
 # Define the codec and create VideoWriter object
 fourcc = cv.VideoWriter_fourcc('M','P','E','G')
 
-#fourcc = cv.VideoWriter_fourcc(*'MJPG')
+# Writes the video as output16.avi
 out = cv.VideoWriter('output16.avi',fourcc, 1.0, (1148,862), isColor = False)
 
 while True:
