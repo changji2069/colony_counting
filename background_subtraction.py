@@ -44,3 +44,6 @@ while True:
     keyboard = cv.waitKey(30)
     if keyboard == 'q' or keyboard == 27:
         break
+
+
+# added test comments
